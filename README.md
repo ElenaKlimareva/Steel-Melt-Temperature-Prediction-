@@ -9,7 +9,6 @@ The model is designed to support **process simulation**, **energy optimisation**
 
 This project demonstrates a full **data science workflow**, including exploratory data analysis, preprocessing, feature engineering, model selection, and result interpretation.
 
----
 
 ## Objective
 - **Task type**: Regression  
@@ -18,10 +17,8 @@ This project demonstrates a full **data science workflow**, including explorator
 - - **Object of modelling:** ladle (batch, `key`)
 Build and evaluate machine learning models to accurately predict the **final temperature of molten steel** based on technological parameters of the process.
 
----
 **Description of the Technological Process** is provided in the project.
 
----
 ## Data Description
 The data come from multiple heterogeneous sources related to the steelmaking process, including:
 
@@ -36,7 +33,9 @@ The data come from multiple heterogeneous sources related to the steelmaking pro
 
 Each batch (`key`) may contain multiple records corresponding to different stages of processing. The target feature is the final temperature. The initial temperature can also be used as a predictive feature. All intermediate temperature measurements can be removed, as they do not reflect the final process outcome.
 
----
+## How to Run
+The project is implemented as a Jupyter Notebook.
+To explore the analysis and results, open and run the notebook in the `notebooks/` directory.
 
 ## Methodology
 
@@ -60,7 +59,6 @@ Each batch (`key`) may contain multiple records corresponding to different stage
 - Spearman correlation (non-normal distributions)
 - Removal of multicollinear and non-informative features
 
----
 
 ## Models Evaluated
 The following models were trained and compared using cross-validation:
@@ -72,7 +70,6 @@ The following models were trained and compared using cross-validation:
 
 Hyperparameters were tuned using Randomized search within a pipeline.
 
----
 
 ## Results
 The best-performing model was **CatBoostRegressor**:
@@ -87,7 +84,6 @@ SHAP analysis confirmed that the model relies on **physically interpretable and 
 - Apparent heating power
 - Gas purging intensity
 
----
 
 ## Key Insights
 - Heating duration is the most influential factor.
@@ -95,7 +91,6 @@ SHAP analysis confirmed that the model relies on **physically interpretable and 
 - Some additives have a cooling effect, consistent with domain knowledge.
 - The model generalises well for a non-linear industrial process.
 
----
 
 ## Applications
 - Technological process simulation
@@ -103,7 +98,6 @@ SHAP analysis confirmed that the model relies on **physically interpretable and 
 - Decision support for steelmaking operations
 - Integration into automated process control systems
 
----
 
 ## Tech Stack
 - Python
@@ -113,4 +107,3 @@ SHAP analysis confirmed that the model relies on **physically interpretable and 
 - SHAP
 - Matplotlib / Seaborn
 
----
