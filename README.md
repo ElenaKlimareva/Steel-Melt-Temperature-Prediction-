@@ -1,5 +1,4 @@
-# Steel Melt Temperature Prediction (Industrial Optimisation)<img width="468" height="12" alt="image" src="https://github.com/user-attachments/assets/c60a7f2a-3c20-4f90-9745-50322d5c2093" />
-
+# Steel Melt Temperature Prediction (Industrial Optimisation)
 
 ## Project Overview
 
