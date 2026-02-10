@@ -20,6 +20,9 @@ Build and evaluate machine learning models to accurately predict the **final tem
 **Description of the Technological Process** is provided in the project.
 
 ## Data Description
+The repository contains raw data provided by the client in their original format.  
+No manual modifications were made outside the preprocessing pipeline implemented in the notebooks.
+
 The data come from multiple heterogeneous sources related to the steelmaking process, including:
 
 - `data_arc_new.csv` — electrode data;
@@ -29,7 +32,6 @@ The data come from multiple heterogeneous sources related to the steelmaking pro
 - `data_temp_new.csv` — temperature measurement results;
 - `data_wire_new.csv` — wire material data (volume);
 - `data_wire_time_new.csv` — wire material data (time).
-
 
 Each batch (`key`) may contain multiple records corresponding to different stages of processing. The target feature is the final temperature. The initial temperature can also be used as a predictive feature. All intermediate temperature measurements can be removed, as they do not reflect the final process outcome.
 
